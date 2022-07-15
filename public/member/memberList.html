@@ -16,38 +16,67 @@
 </head>
 
 <body>
-<div div class="container-fluid">
-	<h1 style="text-align:center;">입사지원자 명단</h1>
-	<br>
-	<div class="d-grid gap-2 justify-content-md-end">
-		<div class="form form-inline">
-			<input type="search" id="name-search" placeholder="이름">
-			<input type="search" id="major-search" placeholder="전공">
-		</div>
-		<div class="form form-inline" style="margin:10px;">
-			<select class="job-select" aria-label="Default select example" style="height:30px;">
-			  <option value="md">기획/MD
-			  <option value="it">IT개발
-			  <option value="strategy">기술/전략
-			  <option value="marketing">마케팅/홍보
-			  <option value="accounting">회계/총무
-			  <option value="sales">영업/판매
+
+
+<nav class="navbar bg-light fixed-top">
+	<div class="container-fluid">
+     <a class="navbar-brand" href="#">위드북</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">관리자 모드</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">모드 변경</a>
+          </li>
+         </ul>
+         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">로그아웃</a>
+          </li>
+         </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+	<div>
+		<h1 style="text-align:center;">입사지원자 명단</h1>
+		<br>
+		<div class="d-grid gap-2 justify-content-md-end">
+			<div class="form form-inline">
+				<input type="search" id="name-search" placeholder="이름">
+				<input type="search" id="major-search" placeholder="전공">
+			</div>
+			<div class="form form-inline" style="margin:10px;">
+				<select class="job-select" aria-label="Default select example" style="height:30px;">
+				  <option value="md">기획/MD
+				  <option value="it">IT개발
+				  <option value="strategy">기술/전략
+				  <option value="marketing">마케팅/홍보
+				  <option value="accounting">회계/총무
+				  <option value="sales">영업/판매
+				</select>
+				<select class="career-select" aria-label="Default select example" style="height:30px;">
+				  <option value="junior">신입
+				  <option value="senior">경력
 			</select>
-			<select class="career-select" aria-label="Default select example" style="height:30px;">
-			  <option value="junior">신입
-			  <option value="senior">경력
-		</select>
-			<select class="certification-select" aria-label="Default select example" style="height:30px;">
-				<option selected>자격증 유무	 
-				<option value="yes-cer">유
-				<option value="no-cer">무
-			</select>	
-			  <button class="btn btn-outline-success" style="height:35px; width:40px;" type="button"><img src="../image/search.png" style="width:20px; height:20px; padding:1px;"></button>
-		  	  <button class="btn btn-outline-success" style="height:35px; width:40px;" type="button"><img src="../image/reset.png" style="width:20px; height:20px;"></button>
+				<select class="certification-select" aria-label="Default select example" style="height:30px;">
+					<option selected>자격증 유무	 
+					<option value="yes-cer">유
+					<option value="no-cer">무
+				</select>	
+				  <button class="btn btn-outline-success" style="height:35px; width:40px;" type="button"><img src="../image/search.png" style="width:20px; height:20px; padding:1px;"></button>
+			  	  <button class="btn btn-outline-success" style="height:35px; width:40px;" type="button"><img src="../image/reset.png" style="width:20px; height:20px;"></button>
+			</div>
 		</div>
 	</div>
-</div>	
-		<br><br>
+		
+			<br><br>
 
 			<table class="table table-success table-striped">
 				<tr style="text-align:center;">
