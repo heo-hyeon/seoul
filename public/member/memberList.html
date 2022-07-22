@@ -121,7 +121,7 @@
 				<tr style="text-align:center; background-color:#FFFAFA;">
 					<td><input type="checkbox" name="1"></td>
 					<td>1</td>
-					<td><a href="./memberView.html">손예진</a></td>
+					<td><a href="./memberModForm.html">손예진</a></td>
 					<td>여</td>
 					<td>32</td>
 					<td>010-1234-1234</td>
@@ -239,11 +239,26 @@
 				  </ul>
 				</nav>
 					<div style="width:90%; margin:auto;">
-					  <button class="btn btn-warning" style="float:left; color:white; margin-left:10px;"><i class="fa-solid fa-square-check"></i></button>
-					  <button class="btn btn-danger" style="float:left; margin-left:5px;"><i class="fa-solid fa-trash-can-arrow-up"></i></button>
-				   	  <button class="btn btn-success" style="float:right; margin-right:10px;"><i class="fa-solid fa-file-circle-plus"></i></button>
-					  <button class="btn btn-success" style="float:right; margin-right:10px;"><a href="./memberRegForm.html"><i class="fa-solid fa-plus"></i></a></button>
+						<button class="btn btn-warning" style="float:left; color:white;"><i class="fa-solid fa-square-check"></i></button>
+						<button type="button" class="btn btn-danger"data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin-left:10px;"><i class="fa-solid fa-trash-can-arrow-up"></i> </button>
+					   	<button class="btn btn-success" style="float:right; margin-right:10px;"><i class="fa-solid fa-file-circle-plus"></i></button>
+						<button class="btn btn-success" style="float:right; margin-right:10px;"><a href="./memberRegForm.html"><i class="fa-solid fa-plus"></i></a></button>
 					</div> 
+					<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					  <div class="modal-dialog">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title" id="exampleModalLabel">삭제</h5>
+					        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					      </div>
+					      <div class="modal-body">정말 삭제하시겠습니까?</div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-danger">삭제</button>
+					        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/e48a00faf1.js" crossorigin="anonymous"></script>
 </body>
