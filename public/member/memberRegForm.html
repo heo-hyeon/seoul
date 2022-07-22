@@ -22,18 +22,18 @@
 		 }
 		 
 		@font-face {
-		    font-family: 'IBMPlexSansKR-Regular';
-		    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
+		    font-family: 'Cafe24Oneprettynight';
+		    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff') format('woff');
 		    font-weight: normal;
 		    font-style: normal;
 		}
-		
+			
 		nav, div {
-			font-family: 'IBMPlexSansKR-Regular';
+			font-family: 'Cafe24Oneprettynight';
 		}
 		
 		h1, h3 {
-			font-family: 'IBMPlexSansKR-Regular';
+			font-family: 'Cafe24Oneprettynight';
 			text-align : center;
 		}
 		
@@ -41,20 +41,20 @@
 			border: 1px solid silver;
 		}
 		
-		.trainingadd {
+		.training_add {
 			background-color:#EBF5FF; 
 			border:none; 
 			border-radius:7px;
-			font-family: 'IBMPlexSansKR-Regular';
+			font-family: 'Cafe24Oneprettynight';
+			float:right;
 		}
 		
 		.save {
-			font-family: 'IBMPlexSansKR-Regular';
+			font-family: 'Cafe24Oneprettynight';
 			background-color:#EBF5FF; 
 			border:none; 
 			border-radius:7px;
 			position: relative;
-			font-family: 'GangwonEdu_OTFBoldA';
 			width: 70px;
 			height: 30px;
 		}
@@ -170,7 +170,7 @@
 					</div>
 				</div>
 					<div class="row">
-					<div class="col-2" style="line-height:50px; background-color:#EBF5FF"></div>
+					<div class="col-2" style="line-height:50px; background-color:#EBF5FF">취미</div>
 					<div class="col-8" style="line-height:10px;">
 						<br><input type="text" class="form-control" style="height:30px;"><br>
 					</div>
@@ -181,15 +181,16 @@
 	<h3>학력사항</h3>
 	<div class="container" style="border: 0.5px solid silver;">
 		<div class="row" align="center" style="background-color:#EBF5FF; height:30px;">
-			<div class="col-2">기간</div>
-			<div class="col-3">출신학교</div>
+			<div class="col-4">기간</div>
+			<div class="col-2">출신학교</div>
 			<div class="col-2">구분</div>
-			<div class="col-3">학과</div>
+			<div class="col-2">학과</div>
 			<div class="col-2">소재지</div>
 		</div>
 		<div class="row" align="center" style="margin-bottom:10px; margin-top:10px;">
-			<div class="col-2"><input type="date" class="form-control" style="height:27px;"></div>
-			<div class="col-3"><input type="text" class="form-control" style="height:27px;"></div>
+			<div class="col-4"><input type="month" class="form-control" style="height:27px; width:100px;">
+			~<input type="month" class="form-control" style="height:27px; width:100px;"></div>
+			<div class="col-2"><input type="text" class="form-control" style="height:27px;"></div>
 			<div class="col-2">
 				<select class="graduate" style="height:27px;">
 					<option>졸업
@@ -197,7 +198,7 @@
 					<option>재학
 				</select>
 			</div>
-			<div class="col-3"><input type="text" class="form-control" style="height:27px;"></div>
+			<div class="col-2"><input type="text" class="form-control" style="height:27px;"></div>
 			<div class="col-2">
 				<select class="region" style="height:27px;">
 					<option>서울
@@ -212,8 +213,9 @@
 			</div>
 		</div>
 		<div class="row" align="center"  style="margin-bottom:10px; margin-top:10px;">
-			<div class="col-2"><input type="date" class="form-control" style="height:27px;"></div>
-			<div class="col-3"><input type="text" class="form-control" style="height:27px;"></div>
+			<div class="col-4"><input type="month" class="form-control" style="height:27px; width:100px;">
+			~<input type="month" class="form-control" style="height:27px; width:100px;"></div>
+			<div class="col-2"><input type="text" class="form-control" style="height:27px;"></div>
 			<div class="col-2">
 				<select class="graduate" style="height:27px;">
 					<option>졸업
@@ -221,7 +223,7 @@
 					<option>재학
 				</select>
 			</div>
-			<div class="col-3"><input type="text" class="form-control" style="height:27px;"></div>
+			<div class="col-2"><input type="text" class="form-control" style="height:27px;"></div>
 			<div class="col-2">
 				<select class="region" style="height:27px;">
 					<option>서울
@@ -237,7 +239,8 @@
 		</div>
 	</div><br>
 	<h3>교육연수</h3>
-	<div align=right><input type="button" class="trainingadd" value="+추가"></div>
+	<div class="container-fluid" style="width:70%;"><input type="button" class="training_add" value="+추가"></div>
+	<br><br>
 	<div class="container" style="border: 0.5px solid silver;">
 		<div class="row" align="center" style="background-color:#EBF5FF; height:30px;">
 			<div class="col-3">연수날짜</div>

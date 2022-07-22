@@ -22,18 +22,18 @@
 		 }
 		 
 		@font-face {
-		    font-family: 'IBMPlexSansKR-Regular';
-		    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
+		    font-family: 'Cafe24Oneprettynight';
+		    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff') format('woff');
 		    font-weight: normal;
 		    font-style: normal;
 		}
 		
-		nav, div {
-			font-family: 'IBMPlexSansKR-Regular';
+		nav, div, .save {
+			font-family: 'Cafe24Oneprettynight';
 		}
 		
 		h1, h3 {
-			font-family: 'IBMPlexSansKR-Regular';
+			font-family: 'Cafe24Oneprettynight';
 			text-align : center;
 		}
 		
@@ -41,27 +41,36 @@
 			border: 1px solid silver;
 		}
 		
-		.trainingadd {
+		.training_add {
 			background-color:#EBF5FF; 
 			border:none; 
 			border-radius:7px;
-			font-family: 'IBMPlexSansKR-Regular';
+			font-family: 'Cafe24Oneprettynight';
+			float:right;
 		}
+
+		.certification_add {
+			background-color:#EBF5FF; 
+			border:none; 
+			border-radius:7px;
+			font-family: 'Cafe24Oneprettynight';
+			float:right;
+		}		
 		
 		.save {
-			font-family: 'IBMPlexSansKR-Regular';
+			font-family: 'Cafe24Oneprettynight';
 			background-color:#EBF5FF; 
 			border:none; 
 			border-radius:7px;
 			position: relative;
-			font-family: 'GangwonEdu_OTFBoldA';
-			width: 70px;
-			height: 30px;
+			width: 90px;
+			height: 35px;
 		}
 		
 		select {
 			border:0.5px solid silver;
 		}
+		
 		
 	</style>
 </head>
@@ -123,7 +132,7 @@
 	<br><h3>기본정보</h3>
 	<div class="container" style="border: 0.5px solid silver;">
 		<div class="row" align="center">
-			<div class="col-2" ></div>
+			<div class="col-2"><img alt="" src="../image/son.jpg" width="200px" height="300px;" ></a></div>
 			<div class="col-10">
 				<div class="row">
 					<div class="col-2" style="line-height:50px; background-color:#EBF5FF">성명</div>
@@ -183,15 +192,17 @@
 	<h3>학력사항</h3>
 	<div class="container" style="border: 0.5px solid silver;">
 		<div class="row" align="center" style="background-color:#EBF5FF; height:30px;">
-			<div class="col-2">기간</div>
-			<div class="col-3">출신학교</div>
+			<div class="col-4">기간</div>
+			<div class="col-2">출신학교</div>
 			<div class="col-2">구분</div>
-			<div class="col-3">학과</div>
+			<div class="col-2">학과</div>
 			<div class="col-2">소재지</div>
 		</div>
 		<div class="row" align="center" style="margin-bottom:10px; margin-top:10px;">
-			<div class="col-2"><input type="date" class="form-control" style="height:27px;"></div>
-			<div class="col-3"><input type="text" class="form-control" style="height:27px;"></div>
+			<div class="col-4">
+			<input type="month" class="form-control" style="height:27px; width:140px;" value="2012-03">
+			~<input type="month" class="form-control" style="height:27px; width:140px;" value="2016-08"></div>
+			<div class="col-2"><input type="text" class="form-control" style="height:27px;" value="서울예술대학교"></div>
 			<div class="col-2">
 				<select class="graduate" style="height:27px;">
 					<option>졸업
@@ -199,7 +210,7 @@
 					<option>재학
 				</select>
 			</div>
-			<div class="col-3"><input type="text" class="form-control" style="height:27px;"></div>
+			<div class="col-2"><input type="text" class="form-control" style="height:27px;" value="영화과"></div>
 			<div class="col-2">
 				<select class="region" style="height:27px;">
 					<option>서울
@@ -214,8 +225,10 @@
 			</div>
 		</div>
 		<div class="row" align="center"  style="margin-bottom:10px; margin-top:10px;">
-			<div class="col-2"><input type="date" class="form-control" style="height:27px;"></div>
-			<div class="col-3"><input type="text" class="form-control" style="height:27px;"></div>
+			<div class="col-4">
+			<input type="month" class="form-control" style="height:27px; width:140px;" value="2009-03">
+			~<input type="month" class="form-control" style="height:27px; width:140px;" value="2012-02"></div>
+			<div class="col-2"><input type="text" class="form-control" style="height:27px;" value="정화여자고등학교"></div>
 			<div class="col-2">
 				<select class="graduate" style="height:27px;">
 					<option>졸업
@@ -223,7 +236,7 @@
 					<option>재학
 				</select>
 			</div>
-			<div class="col-3"><input type="text" class="form-control" style="height:27px;"></div>
+			<div class="col-2"><input type="text" class="form-control" style="height:27px;" value="-"></div>
 			<div class="col-2">
 				<select class="region" style="height:27px;">
 					<option>서울
@@ -239,41 +252,41 @@
 		</div>
 	</div><br>
 	<h3>교육연수</h3>
-	<div align=right><input type="button" class="trainingadd" value="+추가"></div>
-	<div class="container" style="border: 0.5px solid silver;">
-		<div class="row" align="center" style="background-color:#EBF5FF; height:30px;">
-			<div class="col-3">연수날짜</div>
-			<div class="col-4">연수기관</div>
-			<div class="col-5">연수과정 및 내용</div>
-		</div>
-		<div class="row" align="center" style="margin-top:10px; margin-bottom:10px;">
-			<div class="col-3"><input type="date" class="form-control" style="height:27px;"></div>
-			<div class="col-4"><input type="text" class="form-control" style="height:27px;"></div>
-			<div class="col-5"><input type="text" class="form-control" style="height:27px;"></div>
-		</div>
-	</div><br>
+	<div class="container-fluid" style="width:70%;"><input type="button" class="training_add" value="+추가"></div>
+		<br><br>
+		<div class="container" style="border: 0.5px solid silver;">
+			<div class="row" align="center" style="background-color:#EBF5FF; height:30px;">
+				<div class="col-3">연수날짜</div>
+				<div class="col-4">연수기관</div>
+				<div class="col-5">연수과정 및 내용</div>
+			</div>
+			<div class="row" align="center" style="margin-top:10px; margin-bottom:10px;">
+				<div class="col-3">
+				<input type="month" class="form-control" style="height:27px; width:140px;" value="2021-08">
+				~<input type="month" class="form-control" style="height:27px; width:140px;" value="2022-11">
+				</div>
+				<div class="col-4"><input type="text" class="form-control" style="height:27px;" value="K-Digital Training Center"></div>
+				<div class="col-5"><input type="text" class="form-control" style="height:27px;" value="새로운 서비스 기획 및 고객 문제 해결"></div>
+			</div>
+		</div><br>
 	<h3>자격사항</h3>
-	<div class="container" style="border: 0.5px solid silver;">
-		<div class="row" align="center" style="background-color:#EBF5FF; height:30px;">
-			<div class="col-3">취득일</div>
-			<div class="col-3">종류 및 등급</div>
-			<div class="col-3">발행처</div>
-			<div class="col-3">보유기술 및 수준</div>  
-		</div>
-		<div class="row" style="border: 0.5px sild silver; margin-bottom:10px; margin-top:10px;">
-			<div class="col-3"><input type="date" class="form-control" style="height:27px;"></div>
-			<div class="col-3"><input type="text" class="form-control" style="height:27px;"></div>
-			<div class="col-3"><input type="text" class="form-control" style="height:27px;"></div>
-			<div class="col-3"><input type="text" class="form-control" style="height:27px;"></div>
-		</div>
-		<div class="row" style="border: 0.5px sild silver; margin-bottom:10px; margin-top:10px;">
-			<div class="col-3"><input type="date" class="form-control" style="height:27px;"></div>
-			<div class="col-3"><input type="text" class="form-control" style="height:27px;"></div>
-			<div class="col-3"><input type="text" class="form-control" style="height:27px;"></div>
-			<div class="col-3"><input type="text" class="form-control" style="height:27px;"></div>
-		</div>
-	</div><br>
-	<div align="center"><a href="./memberModForm.html"><input type="button" class="save" value="저장"></a></div>
+	<div class="container-fluid" style="width:70%;"><input type="button" class="certification_add" value="+추가"></div>
+		<br><br>
+		<div class="container" style="border: 0.5px solid silver;">
+			<div class="row" align="center" style="background-color:#EBF5FF; height:30px;">
+				<div class="col-3">취득일</div>
+				<div class="col-3">종류 및 등급</div>
+				<div class="col-3">발행처</div>
+				<div class="col-3">보유기술 및 수준</div>  
+			</div>
+			<div class="row" style="border: 0.5px sild silver; margin-bottom:10px; margin-top:10px;">
+				<div class="col-3"><input type="month" class="form-control" style="height:27px; width:140px;" value="2020-09"></div>
+				<div class="col-3"><input type="text" class="form-control" style="height:27px;" value="유통관리사 2급"></div>
+				<div class="col-3"><input type="text" class="form-control" style="height:27px;" value="대한상공회의소"></div>
+				<div class="col-3"><input type="text" class="form-control" style="height:27px;" value="최신 패션 아이템 트렌드 해설 및 주니어 관리"></div>
+			</div>
+		</div><br>
+		<div align="center"><a href="./memberList.html"><input type="button" class="save" value="저장"></a></div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
