@@ -4,8 +4,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>LOGIN</title>
-
+  <title>Book Registration</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -35,22 +34,18 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-  
 </head>
-
-
 <body data-aos-easing="slide" data-aos-duration="800" data-aos-delay="0">
 
   <!-- ======= Header ======= -->
   <header id="header" class="header d-flex align-items-center">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-      <a href="main.html" class="logo d-flex align-items-center">
+      <a href="index.html" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="../resources/img/logo.png" alt=""> -->
         <h1>With Book<span>.</span></h1>
       </a>
-
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
       <nav id="navbar" class="navbar">
@@ -70,47 +65,69 @@
     </div>
   </header><!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
-	<section id="hero" class="hero">
-		<div class="info d-flex align-items-center">
-		   <div class="container">
-		     <div class="row justify-content-center">
-		      <div class="col-lg-6 text-center">
-		<h1 style="color:white;">WITH BOOK</h1>
-		<p style="font-style: oblique; font-size:17px;">독서는 완성된 사람을 만든다. '프란시스 베이컨'</p>
-		<input type="text" class="id" placeholder="ID" style="border:solid silver 0.5px; border-radius:3px;">
-		<br><input type="password" class="pwd" placeholder="***" style="border:solid silver 0.5px; border-radius:3px; margin-top:10px;">
-		<br><button class="btn btn-secondary" type="button" style="width:80px; height:35px; margin:20px;"><a href="main.html" class="active">login</button>
-		<div class="find" style="margin-left:20px;">
-							<a href="">아이디 찾기</a>|
-							<a href="">비밀번호 찾기</a>|
-							<a href="Reg.html">회원가입</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</select> 
-	
-    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+  <main id="main">
 
-      <div class="carousel-item" style="background-image: url(../resources/img/book.jpg)"></div>
-      <div class="carousel-item active" style="background-image: url(../resources/img/library.jpg)"></div>
-      <div class="carousel-item" style="background-image: url(../resources/img/book2.jpg)"></div>
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('../resources/img/book2.jpg');">
+      <div class="container position-relative d-flex flex-column align-items-center aos-init aos-animate" data-aos="fade">
+        <h2>Registration</h2>
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li>Book Registration</li>
+        </ol>
+      </div>
+    </div><!-- End Breadcrumbs -->
 
-      <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-      </a>
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4 mt-1">
+          <div class="col-lg-6">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row gy-4">
+                <div class="col-lg-6 form-group">
+                  <input type="text" name="name" class="form-control" id="book-name" placeholder="Book Name" required="">
+                </div>
+              </div>
+                <div class="col-lg-6 form-group">
+                  <input type="text" class="form-control" name="email" id="writer" placeholder="Writer" required="">
+                </div>
+                <div class="col-lg-6 form-group">
+                  <input type="text" class="form-control" name="email" id="publisher" placeholder="Publisher" required="">
+                </div>
+              	<div class="form-group">
+                	<input type="text" class="form-control" name="subject" id="keyword" placeholder="Keyword" required="">
+              	</div>
+              	<div class="form-group">
+                	<textarea class="form-control" name="review" rows="5" placeholder="Review" required=""></textarea>
+              	</div>
+              	<div class="my-3">
+                	<div class="loading">Loading</div>
+                	<div class="error-message"></div>
+                	<div class="sent-message">책 등록이 완료되었습니다. 감사합니다.</div>
+              	</div>
+              <div class="text-center"><button type="submit">등록하기</button></div>
+            </form>
+          </div><!-- End Contact Form -->
+        </div>
+      </div>
+    </section><!-- End Contact Section -->
+  </main><!-- End #main -->
 
-      <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
-        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-      </a>
-
+ <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="footer-legal text-center position-relative">
+      <div class="container">
+        <div class="copyright">
+          © Copyright <strong><span>With Book</span></strong>. All Rights Reserved
+        </div>
     </div>
+  </footer>
+  <!-- End Footer -->
 
-  </section><!-- End Hero Section -->
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
   
-   <!-- Vendor JS Files -->
+  <!-- Vendor JS Files -->
   <script src="../resources/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="../resources/vendor/aos/aos.js"></script>
   <script src="../resources/vendor/glightbox/js/glightbox.min.js"></script>
@@ -121,5 +138,8 @@
 
   <!-- Template Main JS File -->
   <script src="../resources/js/main.js"></script>
+
+
+
 </body>
 </html>
