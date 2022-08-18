@@ -4,7 +4,8 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>SignUp</title>
+  <title>LOGIN</title>
+
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -27,7 +28,6 @@
 
   <!-- Template Main CSS File -->
   <link href="../resources/css/main.css" rel="stylesheet">
-  
 
   <!-- =======================================================
   * Template Name: UpConstruction - v1.1.0
@@ -35,14 +35,17 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  
 </head>
-<body>
+
+
+<body data-aos-easing="slide" data-aos-duration="800" data-aos-delay="0">
 
   <!-- ======= Header ======= -->
   <header id="header" class="header d-flex align-items-center">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-      <a href="main.html" class="logo d-flex align-items-center">
+      <a href="index.html" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="../resources/img/logo.png" alt=""> -->
         <h1>With Book<span>.</span></h1>
@@ -64,68 +67,71 @@
           </li>
         </ul>
       </nav><!-- .navbar -->
-
     </div>
   </header><!-- End Header -->
 
-  <!-- ======= Reg Section ======= -->
-<section id="hero" class="hero">
+  <!-- ======= Hero Section ======= -->
+	<section id="hero" class="hero">
 	<div class="info d-flex align-items-center">
 	   <div class="container">
-		<form class="row g-2" style="margin-left:30px; margin-top:50px;">
-		  <div class="col-md-4">
-		    <label class="name-label">이름 </label>
-		    <input type="text" class="form-control">
-		  </div>
-		  <div class="col-md-5">
-		    <label class="id-label">아이디 </label>
-		    <input type="password" class="form-control">
-		  </div>
-		  <div class="col-md-4">
-		    <label class="birth-label">생년월일 </label>
-		    <input type="date" class="form-control">
-		  </div>
-		  <div class="col-md-6">
-		    <label class="phone-label">휴대전화 </label>
-		    <input type="text" class="form-control">
-		  </div>
-		  <div class="col-md-5">
-		    <label class="pwd-label">비밀번호 </label>
-		    <input type="text" class="form-control" placeholder="영어,숫자,특수문자 포함 8자 이상 ">
-		  </div>
-		  <div class="col-md-5">
-		    <label class="pwd-check-label">비밀번호 확인 </label>
-		    <input type="text" class="form-control" placeholder="영어,숫자,특수문자 포함 8자 이상 ">
-		  </div>
-		  <div class="col-md-8">
-		    <div class="col-3">
-		    	<label class="email-label">이메일 </label>
-		    </div>
-		    <div class="col-4">
-			    <input type="text" class="form-control">@
-			    <select class="form-control">
-			    	<option>naver.com
-			    	<option>hanmail.net
-			    	<option>gmail.com
-			    </select>
-		    </div> 
-		  </div>	
-		  <div>
-			<label class="genre-label">관심 장르 </label>
-			<br><input type="radio" id="choice1">소설
-			<input type="radio" id="choice2">시/에세이
-			<input type="radio" id="choice3">자기계발
-			<input type="radio" id="choice4">인문
-			<input type="radio" id="choice5">역사/문화
-			<input type="radio" id="choice6">경제/경영
-			<input type="radio" id="choice7">취미/여행
-			<input type="radio" id="choice8">건강/스포츠
-			<input type="radio" id="choice9">정치/사회
-		  </div>
-		</form>
+       		<div class="col-lg-6 text-center">
+			<form class="row g-2" style="margin-left:30px;">
+			  <div class="col-md-6">
+			    <label class="name-label">이름 </label>
+			    <input type="text" class="form-control">
+			  </div>
+			  <div class="col-md-6">
+			    <label class="id-label">아이디 </label>
+			    <input type="password" class="form-control">
+			  </div>
+			  <div class="col-md-6">
+			    <label class="birth-label">생년월일 </label>
+			    <input type="date" class="form-control">
+			  </div>
+			  <div class="col-md-6">
+			    <label class="phone-label">휴대전화 </label>
+			    <input type="text" class="form-control">
+			  </div>
+			  <div class="col-md-6">
+			    <label class="pwd-label">비밀번호 </label>
+			    <input type="text" class="form-control" placeholder="영어,숫자,특수문자 포함 8자 이상 ">
+			  </div>
+			  <div class="col-md-6">
+			    <label class="pwd-check-label">비밀번호 확인 </label>
+			    <input type="text" class="form-control" placeholder="영어,숫자,특수문자 포함 8자 이상 ">
+			  </div>
+			  <div class="col-md-6">
+			    <div class="col-3">
+			    	<label class="email-label">이메일 </label>
+			    </div>
+			    <div class="col-3">
+				    <input type="text" class="form-control">@
+				    <select class="form-control">
+				    	<option>naver.com
+				    	<option>hanmail.net
+				    	<option>gmail.com
+				    </select>
+			    </div> 
+			  </div>	
+			  <div>
+				<label class="genre-label">관심 장르 </label>
+				<input type="radio" id="choice1">소설
+				<input type="radio" id="choice2">시/에세이
+				<input type="radio" id="choice3">자기계발
+				<input type="radio" id="choice4">인문
+				<input type="radio" id="choice5">역사/문화
+				<input type="radio" id="choice6">경제/경영
+				<input type="radio" id="choice7">취미/여행
+				<input type="radio" id="choice8">건강/스포츠
+				<input type="radio" id="choice9">정치/사회
+			  </div>
+			</form>
+			</div>
 		</div>
 	</div>
 	</select> 
+	</section>
+	
 	
     <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
 
@@ -140,10 +146,11 @@
       <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
         <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
       </a>
-      
-    </div>
-</section>
 
+    </div>
+
+  </section><!-- End Hero Section -->
+  
    <!-- Vendor JS Files -->
   <script src="../resources/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="../resources/vendor/aos/aos.js"></script>
