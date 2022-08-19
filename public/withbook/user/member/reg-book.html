@@ -86,20 +86,17 @@
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="row gy-4">
                 <div class="col-lg-6 form-group">
-                  <input type="text" name="name" class="form-control" id="book-name" placeholder="Book Name" required="">
+                  <textarea class="form-control" id="book-name" placeholder="책에 대한 리뷰를 남겨주세요.">
                 </div>
               </div>
                 <div class="col-lg-6 form-group">
-                  <input type="text" class="form-control" name="email" id="writer" placeholder="Writer" required="">
+                  <textarea class="form-control" name="email" id="writer" placeholder="인상깊었던 구절(문장수집)을 남겨주세요.">
                 </div>
                 <div class="col-lg-6 form-group">
-                  <input type="text" class="form-control" name="email" id="publisher" placeholder="Publisher" required="">
+                  <textarea  class="form-control" name="email" id="publisher" placeholder="책과 어울리는 해시태그를 자유롭게 남겨주세요.">
                 </div>
               	<div class="form-group">
-                	<input type="text" class="form-control" name="subject" id="keyword" placeholder="Keyword" required="">
-              	</div>
-              	<div class="form-group">
-                	<textarea class="form-control" name="review" rows="5" placeholder="Review" required=""></textarea>
+                	<input type="text" class="form-control" name="subject" id="keyword" placeholder="Keyword">
               	</div>
               	<div class="my-3">
                 	<div class="loading">Loading</div>
