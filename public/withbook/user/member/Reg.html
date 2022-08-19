@@ -58,7 +58,7 @@
 	     <ul>
           <li><a href="main.html" class="active">Home</a></li>
           <li><a href="likebook.html">찜한 책 </a></li>
-          <li><a href="services.html">추천목록 </a></li>
+          <li><a href="recommendList.html">추천목록 </a></li>
           <li class="dropdown"><a href="#"><span>내 정보 </span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
               <li><a href="#">정보수정 </a></li>
@@ -76,7 +76,7 @@
 <section id="hero" class="hero">
 	<div class="info d-flex align-items-center">
 	   <div class="container">
-		<form class="row g-2" style="margin-left:30px; margin-top:50px; color:white;">
+		<form class="row g-4" style="margin-left:30px; margin-top:50px; color:white;">
 		  <div class="col-md-5">
 		    <label class="name-label">이름 </label>
 		    <input type="text" class="form-control">
@@ -101,31 +101,52 @@
 		    <label class="pwd-check-label">비밀번호 확인 </label>
 		    <input type="text" class="form-control" placeholder="영어,숫자,특수문자 포함 8자 이상 ">
 		  </div>
-		  <div class="col-md-5">
-		    <div class="col-2">
-		    	<label class="email-label">이메일 </label>
-		    </div>
-		    <div class="col-3">
-			    <input type="text" class="form-control">@
-			    <select class="form-control">
-			    	<option>naver.com
-			    	<option>hanmail.net
-			    	<option>gmail.com
-			    </select>
-		    </div> 
+		  <div class="col-md-6">
+		    <label class="email-label">이메일 </label>
+		     <input type="text" class="form-control">
 		  </div>	
-		  <div>
-			<label class="genre-label">관심 장르 </label>
-			<br><input type="radio" id="choice1">소설
-			<input type="radio" id="choice2">시/에세이
-			<input type="radio" id="choice3">자기계발
-			<input type="radio" id="choice4">인문
-			<input type="radio" id="choice5">역사/문화
-			<input type="radio" id="choice6">경제/경영
-			<input type="radio" id="choice7">취미/여행
-			<input type="radio" id="choice8">건강/스포츠
-			<input type="radio" id="choice9">정치/사회
-		  </div>
+		  <div class="form-check form-check-inline">
+			<label class="genre-label">관심 장르 </label><br>
+				<div class="form-check form-check-inline">
+				  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+				  <label class="form-check-label" for="inlineRadio1">소설</label>
+				</div>
+				<div class="form-check form-check-inline">
+				  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2">
+				  <label class="form-check-label" for="inlineRadio2">시/에세이</label>
+				</div>
+				<div class="form-check form-check-inline">
+				  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3">
+				  <label class="form-check-label" for="inlineRadio3">자기계발</label>
+				</div>
+				<div class="form-check form-check-inline">
+				  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4">
+				  <label class="form-check-label" for="inlineRadio4">인문</label>
+				</div>
+				<div class="form-check form-check-inline">
+				  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5">
+				  <label class="form-check-label" for="inlineRadio1">역사/문화</label>
+				</div>
+				<div class="form-check form-check-inline">
+				  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio6">
+				  <label class="form-check-label" for="inlineRadio2">경제/경영</label>
+				</div>
+				<div class="form-check form-check-inline">
+				  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio7">
+				  <label class="form-check-label" for="inlineRadio3">취미/여행</label>
+				</div>
+				<div class="form-check form-check-inline">
+				  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio8">
+				  <label class="form-check-label" for="inlineRadio4">건강/스포츠</label>
+				</div>
+				<div class="form-check form-check-inline">
+				  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio9">
+				  <label class="form-check-label" for="inlineRadio4">정치/사회</label>
+				</div>
+			</div>
+		  	<div class="d-grid garp-2 col-4 mx-auto">
+		  		<br><a href="main.html"><button type="button" class="btn btn-outline-warning ma-auto">가입하기</a>
+			</div>
 		</form>
 		</div>
 	</div>
