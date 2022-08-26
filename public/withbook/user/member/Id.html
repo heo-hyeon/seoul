@@ -1,11 +1,10 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>ID</title>
-
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -24,17 +23,15 @@
 
   <!-- Template Main CSS File -->
   <link href="../resources/css/main.css" rel="stylesheet">
-
+  <script src="https://kit.fontawesome.com/e48a00faf1.js" crossorigin="anonymous"></script>
+ 
   <!-- =======================================================
   * Template Name: UpConstruction - v1.1.0
   * Template URL: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-  
 </head>
-
-
 <body data-aos-easing="slide" data-aos-duration="800" data-aos-delay="0">
 
   <!-- ======= Header ======= -->
@@ -57,7 +54,7 @@
           <li class="dropdown"><a href="#"><span>내 정보 </span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
               <li><a href="mod.html">기본정보</a></li>
-              <li><a href="mypage.html">상세정보</a></li>
+              <li><a href="mypage.html">상세정보</a></li>              
               <li><a href="login.html">로그아웃 </a></li>
               <li><a href="#">기타 </a></li>
             </ul>
@@ -67,25 +64,36 @@
     </div>
   </header><!-- End Header -->
 
+  <main id="main">
+
+    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('../resources/img/library.jpg');">
+      <div class="container position-relative d-flex flex-column align-items-center aos-init aos-animate" data-aos="fade">
+        <h2>정보 찾기</h2>
+        <ol>
+          <li><a href="main.html">Home</a></li>
+          <li>아이디 찾기</li>
+        </ol>
+      </div>
+    </div>
+
   <!-- ======= Hero Section ======= -->
-	<section id="hero" class="hero">
+   <section id="blog" class="blog">
 		<div class="info d-flex align-items-center">
 		   <div class="container">
 		     <div class="row justify-content-center">
 		     	<div class="col-lg-6 text-center">
-		      		<h2 style="color:white; margin:40px; font-size: 40px;">아이디 찾기</h2>
 					  <div class="mb-3 row">
-					    <label for="cName" class="col-sm-2 col-form-label" style="color:white; float:left;">이름</label>
+					    <label for="Name" class="col-sm-2 col-form-label" style="float:left;">이름</label>
 						    <div class="col-sm-4">
 						      <input type="text" class="form-control" id="fine-id-name">
 						    </div>
 					  </div>
 				  	  <div class="mb-3 row">
-				    	<label for="inputPassword" class="col-sm-2 col-form-label" style="color:white;">이메일</label>
+				    	<label for="inputPassword" class="col-sm-2 col-form-label">이메일</label>
 					    <div class="col-sm-4">
 					      <input type="text" class="form-control" id="inputEmail">
 					    </div>
-				        <div class="col-sm-1" style="color:white; font-size:20px;">@</div>
+				        <div class="col-sm-1" style="font-size:20px;">@</div>
 				        <div class="col-sm-5">
 				        	<select class="form-control">
 				        		<option>선택하세요.
@@ -93,11 +101,12 @@
 				        		<option>hanmail.net
 				        		<option>gmail.com
 				        	</select>
-					    </div>
+					   	 </div>
 		 	 			</div>
  	 		       		<div class="text-center">
        						<button type="button" class="btn btn-outline-warning" style="float:right; width:100px;"><a href="find-id.html">찾기</a></button>
        					</div>
+      					
   					 	<div class="card" style="width:17rem; opacity:0.75; margin-top:100px; margin-left:220px;">
 						  <div class="card-header">
 						    아이디 찾기 결과
@@ -111,25 +120,23 @@
 					</div>
 				</div>
 			</div>
-		</div>
+	  </section>
 
-
-    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
-      <div class="carousel-item" style="background-image: url(../resources/img/book.jpg)"></div>
-      <div class="carousel-item" style="background-image: url(../resources/img/library.jpg)"></div>
-      <div class="carousel-item active" style="background-image: url(../resources/img/book2.jpg)"></div>
-      <div class="carousel-item" style="background-image: url(../resources/img/book3.jpg)"></div>
-      <div class="carousel-item" style="background-image: url(../resources/img/book4.jpg)"></div>
-      <div class="carousel-item" style="background-image: url(../resources/img/glasses.jpg)"></div>
-      <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-      </a>
-      <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
-        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-      </a>
-    </div>
-  </section>
   
+ <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="footer-legal text-center position-relative">
+      <div class="container">
+        <div class="copyright">
+          © Copyright <strong><span>With Book</span></strong>. All Rights Reserved
+        </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
   <script src="../resources/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="../resources/vendor/aos/aos.js"></script>
   <script src="../resources/vendor/glightbox/js/glightbox.min.js"></script>
@@ -137,6 +144,9 @@
   <script src="../resources/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="../resources/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="../resources/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
   <script src="../resources/js/main.js"></script>
+
 </body>
 </html>
