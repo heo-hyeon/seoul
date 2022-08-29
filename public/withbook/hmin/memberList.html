@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>memberList</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<style>
+		select {
+			width : 150px;
+			margin: 2px;
+			float : right;
+			font-family: 'Cafe24Oneprettynight';
+			font-size: 15px;
+		}
+
+		.main_image {
+	  		position: relative;
+	  		margin: auto;
+	  		width : 90%;
+		}
+	  
+	 	.main_image_text {
+			position: absolute;
+		 	top: 50%;
+		  	left: 50%;
+		 	transform: translate( -50%, -50% );
+		  	color: white;
+	  	}
+	  	
+		@font-face {
+		    font-family: 'Cafe24Oneprettynight';
+		    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff') format('woff');
+		    font-weight: normal;
+		    font-style: normal;
+		}
+			
+		h1, nav, input, table {
+			font-family: 'Cafe24Oneprettynight';
+		}
+				
+	</style>
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg bg-light">
+	  <div class="container-fluid">
+	    <a class="navbar-brand" href="#">위드북</a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			<div class="navbar-nav">
+	        <a class="nav-link active" aria-current="page" href="#">코드그룹관리</a>
+	        <a class="nav-link" href="#">코드관리</a>
+	        <a class="nav-link" href="#">회원관리</a>
+	        </div>
+	     </div> 
+	    	<ul class="nav justify-content-end">
+			  <li class="nav-item">
+			  <a class="nav-link active" aria-current="page" href="#">관리자모드 변경</a>
+			  </li>
+			  <li class="nav-item">
+			  <a class="nav-link" href="#">로그아웃</a>
+			  </li>
+			</ul>
+	    </div>
+	</nav>
+	
+	<div class="main_image">
+	<img src="../image/cloud.jpg" width=1700px; height=300px;>
+	<h1 class="main_image_text" style="font-size:50px;">입사지원자 명단</h1>
+	</div>
+	<br>
+		<div class="d-grid gap-2 justify-content-md-end" style="width:90%; margin:auto;">
+			<div class="form form-inline" style="margin:10px;">
+				<select class="certification-select" aria-label="Default select example" style="height:30px;">
+					<option value="no">N
+					<option value="yes">Y
+				</select>	
+				<select class="job-select" aria-label="Default select example" style="height:30px;">
+				  <option value="md">기획/MD
+				  <option value="it">IT개발
+				  <option value="strategy">기술/전략
+				  <option value="marketing">마케팅/홍보
+				  <option value="accounting">회계/총무
+				  <option value="sales">영업/판매
+				</select>
+				<select class="career-select" aria-label="Default select example" style="height:30px;">
+				  <option value="junior">신입
+				  <option value="senior">경력
+				</select>
+				<select class="certification-select" aria-label="Default select example" style="height:30px;">
+					<option selected>자격증 유무	 
+					<option value="yes-cer">유
+					<option value="no-cer">무
+				</select>	
+				<div class="form form-inline">
+				<input type="search" id="name-search" placeholder="이름">
+				<input type="search" id="major-search" placeholder="전공">
+				<button class="btn btn-warning" style="height:35px; width:40px;" type="button"><i class="fa-solid fa-arrow-rotate-right"></i></button>
+				<button class="btn btn-success" style="height:35px; width:40px;" type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+				</div>
+			</div>
+		</div>
+		<br><br>
+			<table class="table table-striped" style="width:90%; margin:auto;">
+				<tr style="text-align:center; background-color:#D2D2FF">
+					<th width="40px">선택</th>
+					<th width="40px">번호</th>
+					<th width="60px">이름</th>
+					<th width="40px">성별</th>
+					<th width="40px">나이</th>
+					<th width="150px">핸드폰번호</th>
+					<th width="200px">이메일</th>
+					<th width="120px">전공</th>
+					<th width="100px">지원분야</th>
+					<th width="50px">신입/경력</th>
+					<th width="90px">자격증유무</th>	
+				</tr>
+				<tr style="text-align:center; background-color:#FFFAFA;">
+					<td><input type="checkbox" name="1"></td>
+					<td>1</td>
+					<td><a href="./memberModForm.html">손예진</a></td>
+					<td>여</td>
+					<td>32</td>
+					<td>010-1234-1234</td>
+					<td>yejin@naver.com</td>
+					<td>호텔경영학과</td>
+					<td>기획/MD</td>
+					<td>경력</td>
+					<td>유</td>
+				</tr>
+				<tr style="text-align:center; background-color:#FFFAFA;">
+					<td><input type="checkbox" name="2"></td>
+					<td>2</td>
+					<td>강하늘</td>
+					<td>남</td>
+					<td>26</td>
+					<td>010-1234-1234</td>
+					<td>kksky@hanmail.net</td>
+					<td>컴퓨터공학과</td>
+					<td>IT개발</td>
+					<td>신입</td>
+					<td>유</td>
+				</tr>		
+				<tr style="text-align:center; background-color:#FFFAFA;">
+					<td><input type="checkbox" name="3"></td>
+					<td>3</td>
+					<td>정해인</td>
+					<td>남</td>
+					<td>30</td>
+					<td>010-1234-1234</td>
+					<td>junghi@hanmail.net</td>
+					<td>전기공학과</td>
+					<td>기획/전략</td>
+					<td>경력</td>
+					<td>유</td>
+				</tr>
+			<tr style="text-align:center; background-color:#FFFAFA;">
+					<td><input type="checkbox" name="4"></td>
+					<td>4</td>
+					<td>한지민</td>
+					<td>여</td>
+					<td>31</td>
+					<td>010-1234-1234</td>
+					<td>hjmm@naver.com</td>
+					<td>광고언론학과</td>
+					<td>마케팅/홍보</td>
+					<td>신입</td>	
+					<td>무</td>		
+				</tr>
+				<tr style="text-align:center; background-color:#FFFAFA;">
+					<td><input type="checkbox" name="5"></td>
+					<td>5</td>
+					<td>한효주</td>
+					<td>여</td>
+					<td>28</td>
+					<td>010-1234-1234</td>
+					<td>hyojj@gmail.com</td>
+					<td>경제학과</td>
+					<td>회계/총무</td>
+					<td>신입</td>		
+					<td>유</td>
+				</tr>
+				<tr style="text-align:center; background-color:#FFFAFA;">
+					<td><input type="checkbox" name="6"></td>
+					<td>6</td>
+					<td>박보검</td>
+					<td>남</td>
+					<td>28</td>
+					<td>010-1234-1234</td>
+					<td>bbkk@gmail.com</td>
+					<td>경영학과</td>
+					<td>영업/판매</td>
+					<td>신입</td>	
+					<td>무</td>
+				</tr>
+				<tr style="text-align:center; background-color:#FFFAFA;">
+					<td><input type="checkbox" name="7"></td>
+					<td>7</td>
+					<td>이태선</td>
+					<td>남</td>
+					<td>30</td>
+					<td>010-1234-1234</td>
+					<td>taelee@naver.com</td>
+					<td>기계공학과</td>
+					<td>IT개발</td>
+					<td>경력</td>	
+					<td>무</td>
+				</tr>
+				<tr style="text-align:center; background-color:#FFFAFA;">
+					<td><input type="checkbox" name="8"></td>
+					<td>8</td>
+					<td>신민아</td>
+					<td>여</td>
+					<td>27</td>
+					<td>010-1234-1234</td>
+					<td>minA@naver.com</td>
+					<td>산업디자인학과</td>
+					<td>기획/MD</td>
+					<td>신입</td>	
+					<td>유</td>
+				</tr>
+			</table>
+				<nav aria-label="Page navigation example" style="margin:20px;">
+				  <ul class="pagination justify-content-center">
+				    <li class="page-item">
+				      <a class="page-link" href="#" aria-label="Previous">
+				        <span aria-hidden="true">&laquo;</span>
+				      </a>
+				    </li>
+				    <li class="page-item"><a class="page-link" href="#">1</a></li>
+				    <li class="page-item">
+				      <a class="page-link" href="#" aria-label="Next">
+				        <span aria-hidden="true">&raquo;</span>
+				      </a>
+				    </li>
+				  </ul>
+				</nav>
+					<div style="width:90%; margin:auto;">
+						<button class="btn btn-warning" style="float:left; color:white;"><i class="fa-solid fa-square-check"></i></button>
+						<button type="button" class="btn btn-danger"data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin-left:10px;"><i class="fa-solid fa-trash-can-arrow-up"></i> </button>
+					   	<button class="btn btn-success" style="float:right; margin-right:10px;"><i class="fa-solid fa-file-circle-plus"></i></button>
+						<button class="btn btn-warning" style="float:right; margin-right:10px;"><a href="./memberRegForm.html"><i class="fa-solid fa-plus"></i></a></button>
+					</div> 
+					<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					  <div class="modal-dialog">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title" id="exampleModalLabel">삭제</h5>
+					        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					      </div>
+					      <div class="modal-body">정말 삭제하시겠습니까?</div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-danger">삭제</button>
+					        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/e48a00faf1.js" crossorigin="anonymous"></script>
+</body>
+</html>
