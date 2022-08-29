@@ -77,15 +77,28 @@
       </div>
     </div><!-- End Breadcrumbs -->
     
-    
+   
     <section id="blog" class="blog">
     	<div class="post-item position-relative h-100">
 			<div class="d-grid gap-2 justify-content-md-end" style="width:90%; margin:auto;">
-				<div class="form form-inline" style="margin:10px;">
-					<select class="certification-select" aria-label="Default select example" style="height:30px;">
+				<div class="form form-inline">
+					<select class="certification-select" aria-label="Default select example" style="height:30px; width:180px; margin-right:7px;">
 						<option value="no">N
 						<option value="yes">Y
 					</select>	
+					<select class="certification-select" aria-label="Default select example" style="height:30px; width:180px; margin-right:7px;">
+						<option value=" ">수정일
+						<option value=" ">
+					</select>	
+					<input type="search" id="name-search" placeholder="시작일" style="height:30px; width:180px; margin-right:7px;">
+					<input type="search" id="name-search" placeholder="종료일" style="height:30px; width:180px;">		
+					<br>
+					<select class="certification-select" aria-label="Default select example" style="height:30px; width:180px; margin-right:7px; margin-top:10px;">
+						<option value=" ">검색구분
+						<option value=" ">
+					</select>									
+					<input type="search" id="name-search" placeholder="검색어" style="height:30px; width:180px; margin-right:7px;">
+				<!--  
 					<select class="job-select" aria-label="Default select example" style="height:30px;">
 					  <option value="md">기획/MD
 					  <option value="it">IT개발
@@ -102,18 +115,27 @@
 						<option selected>자격증 유무	 
 						<option value="yes-cer">유
 						<option value="no-cer">무
-					</select>	
+					</select>	 
 					<div class="form form-inline">
 					<input type="search" id="name-search" placeholder="이름">
 					<input type="search" id="major-search" placeholder="전공">
+					-->
 					<button class="btn btn-warning" style="height:35px; width:40px;" type="button"><i class="fa-solid fa-arrow-rotate-right"></i></button>
 					<button class="btn btn-success" style="height:35px; width:40px;" type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
-					</div>
 				</div>
 			</div>
+				<div>
+					<p style="margin-left:100px;">total : 40
+					<select style="width:80px; height:30px; float:right; margin-right:100px;">
+						<option>1
+						<option>2
+						<option>3
+					</select>
+				</div>
 			<br><br>
 				<table class="table table-striped" style="width:90%; margin:auto;">
 					<tr style="text-align:center; background-color:#D2D2FF">
+						<th width="70px;"><input type="checkbox"></th>
 						<th width="70px">#</th>
 						<th width="100px">코드그룹 코드</th>
 						<th width="150px">코드그룹 이름(한글)</th>
@@ -123,64 +145,71 @@
 						<th width="100px">수정일</th>
 					</tr>
 					<tr style="text-align:center; background-color:#FFFAFA;">
-						<td><input type="checkbox" name="1"></td>
+						<td><input type="checkbox" name="8"></td>
 						<td>1</td>
 						<td>20</td>
 						<td>가나다</td>
+						<td> </td>
 						<td>0</td>
 						<td> </td>
 						<td> </td>
 					</tr>
 					<tr style="text-align:center; background-color:#FFFAFA;">
-						<td><input type="checkbox" name="2"></td>
+						<td><input type="checkbox" name="8"></td>
 						<td>2</td>
 						<td>21</td>
 						<td>가나다라</td>
+						<td> </td>
 						<td>0</td>
 						<td> </td>
 						<td> </td>
 					</tr>		
 					<tr style="text-align:center; background-color:#FFFAFA;">
-						<td><input type="checkbox" name="3"></td>
+						<td><input type="checkbox" name="8"></td>
 						<td>3</td>
 						<td>22</td>
 						<td>마바사</td>
+						<td> </td>
 						<td>0</td>
 						<td> </td>
 						<td> </td>
 					</tr>
 					<tr style="text-align:center; background-color:#FFFAFA;">
-						<td><input type="checkbox" name="4"></td>
+						<td><input type="checkbox" name="8"></td>
 						<td>4</td>
 						<td>23</td>
 						<td>마바사아</td>
+						<td> </td>
 						<td>0</td>
 						<td> </td>
 						<td> </td>
 					</tr>
 					<tr style="text-align:center; background-color:#FFFAFA;">
-						<td><input type="checkbox" name="5"></td>
+						<td><input type="checkbox" name="8"></td>
 						<td>5</td>
 						<td>24</td>
 						<td>아자차카</td>
+						<td> </td>
 						<td>0</td>
 						<td> </td>
 						<td> </td>
 					</tr>
 					<tr style="text-align:center; background-color:#FFFAFA;">
-						<td><input type="checkbox" name="6"></td>
+						<td><input type="checkbox" name="8"></td>
 						<td>6</td>
 						<td>25</td>
 						<td>타파하</td>
+						<td> </td>
 						<td>0</td>
 						<td> </td>
 						<td> </td>
 					</tr>
 					<tr style="text-align:center; background-color:#FFFAFA;">
-						<td><input type="checkbox" name="7"></td>
+						<td><input type="checkbox" name="8"></td>
 						<td>7</td>
 						<td>26</td>
 						<td>아에이오우</td>
+						<td> </td>
 						<td>0</td>
 						<td> </td>
 						<td> </td>
@@ -190,6 +219,7 @@
 						<td>8</td>
 						<td>27</td>
 						<td>사세시소수</td>
+						<td> </td>
 						<td>0</td>
 						<td> </td>
 						<td> </td>
@@ -208,8 +238,8 @@
 		<div style="width:90%; margin:auto;">
 			<button class="btn btn-warning" style="float:left; color:white;"><i class="fa-solid fa-square-check"></i></button>
 			<button type="button" class="btn btn-danger"data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin-left:10px;"><i class="fa-solid fa-trash-can-arrow-up"></i> </button>
-		   	<button class="btn btn-success" style="float:right; margin-right:10px;"><i class="fa-solid fa-file-circle-plus"></i></button>
-			<button class="btn btn-outline-warning" style="float:right; margin-right:10px;"><a href="./memberRegForm.html"<i class="fa-solid fa-user-plus"></i></a></button>
+		   	<button class="btn btn-success" style="float:right; margin-right:7px;"><i class="fa-solid fa-file-circle-plus"></i></button>
+			<button class="btn btn-outline-warning" style="float:right; margin-right:7px;"><a href="./memberRegForm.html"<i class="fa-solid fa-user-plus"></i></a></button>
 		</div> 
 		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		  <div class="modal-dialog">
