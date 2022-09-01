@@ -68,51 +68,42 @@
     <div class="breadcrumbs d-flex align-items-center" style="background-image: url('../resources/img/book.jpg');">
       <div class="container position-relative d-flex flex-column align-items-center aos-init aos-animate" data-aos="fade">
 
-        <h2>Code Management</h2>
+        <h2>Code Group Management</h2>
         <ol>
           <li><a href="main.html">Home</a></li>
-          <li>Code Management</li>
+          <li>Code Group Management</li>
         </ol>
       </div>
     </div><!-- End Breadcrumbs -->
     
-    <h2 style="margin:20px 0 20px 50px;">코드 관리</h2>
+    <h2 style="margin:20px 0 20px 50px;">코드그룹 관리</h2>
 	<form class="row g-2" style="margin-left:30px; width:90%;">
-	<div class="row">	
 	  <div class="col-md-6">
-	  	<label class="useNY-label">사용여부</label>
-	  	<select class="form-control">
-	  		<option>선택하세요
-	  		<option> 
-	  	</select>
+	  	<label class="useNY-label">코드그룹 코드</label>
+	  	<input type="text" class="form-control" placeholder="영문(대소문자),숫자">
 	   </div>
+	  <div class="col-md-6">
+	  	<label class="code-label">코드그룹 코드 (Another))</label>
+  		<input type="text" class="form-control" placeholder="영문(대소문자),숫자">
 	  </div>
 	  <div class="col-md-6">
-	  	<label class="code-label">코드</label>
-	  	<input type="text" class="form-control" placeholder="자동생성" disabled>
+	  	<label class="code-label">코드그룹 이름 (한글)</label>
+	  	<input type="text" class="form-control" placeholder="한글,숫자">
+	  </div>
+ 	  <div class="col-md-6">
+	  	<label class="code-label">코드그룹 이름 (영문)</label>
+	  	<input type="text" class="form-control" placeholder="영문(대소문자),숫자">
 	  </div>
 	  <div class="col-md-6">
-	  	<label class="code-label">코드(Another)</label>
-	  	<input type="text" class="form-control">
+	    <label class="codeName-label">사용여부</label>
+	    <select class="form-control">
+	    	<option>Y
+	    	<option>N
+	    </select>
 	  </div>
 	  <div class="col-md-6">
-	    <label class="codeName-label">코드 이름 (한글)</label>
-	    <input type="text" class="form-control">
-	  </div>
-	  <div class="col-md-6">
-	    <label class="codeName-label">코드 이름 (영문)</label>
-	    <input type="password" class="form-control">
-	  </div>
-	  <div class="col-md-6">
-	  	<label class="useNY-label">사용여부</label>
-	  	<select class="form-control">
-	  		<option>Y
-	  		<option>N
-	  	</select>
-	  </div>
-	  <div class="col-md-6">
-	    <label class="num-label">순서</label>
-	    <input type="text" class="form-control">
+	  	<label class="useNY-label">순서</label>
+	 	<input type="text" class="form-control" placeholder="숫자">
 	  </div>
 	  <div class="col-md-6">
 	  	<label class="info-label">설명</label>
@@ -127,32 +118,32 @@
 	  </div>
 	  <div class="col-md-6">
 	  	<label class="reserve-label">예비1 (varchar type)</label>
-	  	<input type="text" class="form-control">
+	  	<input type="text" class="form-control" placeholder="영문(대소문자),숫자">
 	  </div>
 	  <div class="col-md-6">
 	  	<label class="reserve-label">예비2 (varchar type)</label>
-	  	<input type="text" class="form-control">
+	  	<input type="text" class="form-control" placeholder="영문(대소문자),숫자">
 	  </div>
 	  <div class="row">
 	  <div class="col-md-6">
 	  	<label class="reserve-label">예비3 (varchar type)</label>
-	  	<input type="text" class="form-control">
+	  	<input type="text" class="form-control" placeholder="영문(대소문자),숫자">
 	  </div>
 	  </div>
 	  <div class="col-md-6"> 
 	  	<lavel class="reserve-label">예비1 (int type)</lavel>
-	  	<input type="text" class="form-control">
+	  	<input type="text" class="form-control" placeholder="숫자">
 	  </div>
 	  <div class="col-md-6"> 
 	  	<lavel class="reserve-label">예비2 (int type)</lavel>
-	  	<input type="text" class="form-control">
+	  	<input type="text" class="form-control" placeholder="숫자">
 	  </div>
-	  <div class="col-md-6"> 
+	  <div class="col-md-6" style="margin-bottom:20px;"> 
 	  	<lavel class="reserve-label">예비3 (int type)</lavel>
-	  	<input type="text" class="form-control">
+	  	<input type="text" class="form-control" placeholder="숫자">
 	  </div>
 	</form>
-   	<div style="width:90%; margin:20px 0 20px 30px;">
+ 	<div style="width:90%; margin:20px 0 20px 30px;">
 			<button class="btn btn-warning" style="float:left; color:white;"><i class="fa-solid fa-chart-bar"></i></button>
 			<button class="btn btn-danger"  style="margin-left:10px;" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-trash-can-arrow-up"></i></button>
 			<button class="btn btn-success" style="float:right; margin-right:7px;"><i class="fa-regular fa-bookmark"></i></button>
@@ -173,6 +164,7 @@
 		    </div>
 		  </div>
 		</div>
+   
   </main><!-- End #main -->
   
  <!-- ======= Footer ======= -->
