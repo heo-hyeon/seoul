@@ -82,8 +82,7 @@
     		<h2 style="margin-left:90px;">코드 관리</h2>
 			<div class="d-grid gap-2 justify-content-md-end" style="width:90%; margin:auto;  border:0.7px solid silver; padding:10px;">
 				<div class="form form-inline">
-					<input type="search" id="name-search" placeholder="검색어" style="height:30px; width:180px; margin-right:7px;">
-					<select class="job-select" aria-label="Default select example" style="height:30px;">
+					<select class="job-select" aria-label="Default select example" style="height:30px; width:180px; margin-right:7px;">
 					  <option value="md">기획/MD
 					  <option value="it">IT개발
 					  <option value="strategy">기술/전략
@@ -91,18 +90,18 @@
 					  <option value="accounting">회계/총무
 					  <option value="sales">영업/판매
 					</select>
-					<select class="career-select" aria-label="Default select example" style="height:30px;">
+					<select class="career-select" aria-label="Default select example" style="height:30px; width:180px; margin-right:7px;">
 					  <option value="junior">신입
 					  <option value="senior">경력
 					</select>
-					<select class="certification-select" aria-label="Default select example" style="height:30px;">
+					<select class="certification-select" aria-label="Default select example" style="height:30px; width:180px; margin-right:7px;">
 						<option selected>자격증 유무	 
 						<option value="yes-cer">유
 						<option value="no-cer">무
 					</select>	 
 					<div class="form form-inline">
-					<input type="search" id="name-search" placeholder="이름">
-					<input type="search" id="major-search" placeholder="전공">
+					<input type="search" id="name-search" placeholder="이름" style="height:30px; width:180px; margin-right:7px; margin-top:10px;">
+					<input type="search" id="major-search" placeholder="전공" style="height:30px; width:180px; margin-right:7px; margin-top:10px;">
 					<button class="btn btn-success" style="height:35px; width:40px;" type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
 					<button class="btn btn-warning" style="height:35px; width:40px;" type="button"><i class="fa-solid fa-arrow-rotate-right"></i></button>
 					</div>
@@ -128,150 +127,162 @@
 						<th width="150px">코드 이름(한글)
 						<th width="150px">코드 이름(영문)</th>
 						<th width="70px">사용</th>
+						<th width="70px">사용</th>
 						<th width="70px">순서</th>
-						<th width="100px">수정일</th>
+						<th width="100px">등록일</th>
 						<th width="100px">수정일</th>
 					</tr>
 					<tr style="text-align:center; background-color:#FFFAFA;">
 						<td><input type="checkbox" name="1"></td>
-						<td>106</td>
 						<td>1</td>
-						<td>공통.디바이스1</td>
+						<td>1</td>
+						<td>지원분야</td>
 						<td>1</td>
 						<td> </td>
-						<td>웹-MS edge</td>
+						<td>기획/MD</td>
 						<td> </td>
 						<td>Y</td>
+						<td>N</td>
 						<td>1</td>
+						<td> </td>
+						<td> </td>
+					</tr>
+					<tr style="text-align:center; background-color:#FFFAFA;">
+						<td><input type="checkbox" name="10"></td>
+						<td>2</td>
+						<td>1</td>
+						<td>지원분야</td>
+						<td>2</td>
+						<td> </td>
+						<td>마케팅</td>
+						<td> </td>
+						<td>Y</td>
+						<td>N</td>
+						<td>2</td>
 						<td> </td>
 						<td> </td>
 					</tr>
 					<tr style="text-align:center; background-color:#FFFAFA;">
 						<td><input type="checkbox" name="2"></td>
-						<td>105</td>
-						<td>1</td>
-						<td>공통.디바이스1</td>
+						<td>3</td>
 						<td>2</td>
+						<td>경력사항</td>
+						<td>3</td>
 						<td> </td>
-						<td>웹-크림기반 edge</td>
+						<td>경력</td>
 						<td> </td>
 						<td>Y</td>
+						<td>N</td>
 						<td>1</td>
 						<td> </td>
 						<td> </td>
 					</tr>
 					<tr style="text-align:center; background-color:#FFFAFA;">
 						<td><input type="checkbox" name="3"></td>
-						<td>104</td>
-						<td>1</td>
-						<td>공통.디바이스1</td>
+						<td>4</td>
 						<td>3</td>
+						<td>취미</td>
+						<td>4</td>
 						<td> </td>
-						<td>웹-오페라</td>
+						<td>운동</td>
 						<td> </td>
 						<td>Y</td>
+						<td>N</td>
 						<td>1</td>
 						<td> </td>
 						<td> </td>
 					</tr>
 					<tr style="text-align:center; background-color:#FFFAFA;">
-						<td><input type="checkbox" name="4"></td>
-						<td>103</td>
-						<td>4</td>
-						<td>공통.디바이스1</td>
-						<td>4</td>
-						<td> </td>
-						<td>웹-크롬</td>
-						<td> </td>
-						<td>Y</td>
-						<td>1</td>
-						<td> </td>
-						<td> </td>
-					</tr>
-					<tr style="text-align:center; background-color:#FFFAFA;">
-						<td><input type="checkbox" name="5"></td>
-						<td>102</td>
-						<td>1</td>
-						<td>공통.디바이스1</td>
+						<td><input type="checkbox" name="9"></td>
+						<td>5</td>
+						<td>3</td>
+						<td>취미</td>
 						<td>5</td>
 						<td> </td>
-						<td>웹-익스</td>
+						<td>노래</td>
 						<td> </td>
 						<td>Y</td>
-						<td>1</td>
+						<td>N</td>
+						<td>2</td>
 						<td> </td>
 						<td> </td>
 					</tr>		
 					<tr style="text-align:center; background-color:#FFFAFA;">
-						<td><input type="checkbox" name="6"></td>
-						<td>101</td>
-						<td>1</td>
-						<td>공통.디바이스1</td>
+						<td><input type="checkbox" name="4"></td>
+						<td>6</td>
+						<td>4</td>
+						<td>지역</td>
 						<td>6</td>
 						<td> </td>
-						<td>웹-파이어폭스</td>
+						<td>서울</td>
 						<td> </td>
 						<td>Y</td>
+						<td>N</td>
 						<td>1</td>
 						<td> </td>
 						<td> </td>
 					</tr>
 					<tr style="text-align:center; background-color:#FFFAFA;">
 						<td><input type="checkbox" name="7"></td>
-						<td>100</td>
-						<td>1</td>
-						<td>공통.디바이스1</td>
+						<td>7</td>
+						<td>4</td>
+						<td>지역</td>
 						<td>7</td>
 						<td> </td>
-						<td>웹-사파리</td>
+						<td>경기</td>
 						<td> </td>
 						<td>Y</td>
-						<td>1</td>
+						<td>N</td>
+						<td>2</td>
 						<td> </td>
 						<td> </td>
-					</tr>																		
+					</tr>	
 					<tr style="text-align:center; background-color:#FFFAFA;">
-						<td><input type="checkbox" name="8"></td>
-						<td>99</td>
-						<td>1</td>
-						<td>공통.디바이스1</td>
+						<td><input type="checkbox" name="5"></td>
+						<td>8</td>
+						<td>5</td>
+						<td>이메일</td>
 						<td>8</td>
 						<td> </td>
-						<td>웹-훼일</td>
+						<td>naver.com</td>
 						<td> </td>
 						<td>Y</td>
+						<td>N</td>
 						<td>1</td>
 						<td> </td>
 						<td> </td>
-					</tr>							
+					</tr>		
 					<tr style="text-align:center; background-color:#FFFAFA;">
-						<td><input type="checkbox" name="9"></td>
-						<td>98</td>
-						<td>1</td>
-						<td>공통.디바이스1</td>
+						<td><input type="checkbox" name="6"></td>
+						<td>9</td>
+						<td>6</td>
+						<td>통신사</td>
 						<td>9</td>
 						<td> </td>
-						<td>웹-기타2</td>
+						<td>SKT</td>
 						<td> </td>
 						<td>Y</td>
+						<td>N</td>
 						<td>1</td>
+						<td> </td>
+						<td> </td>
+					</tr>
+																	
+					<tr style="text-align:center; background-color:#FFFAFA;">
+						<td><input type="checkbox" name="8"></td>
+						<td>10</td>
+						<td>6</td>
+						<td>통신사</td>
+						<td>10</td>
+						<td> </td>
+						<td>KT</td>
+						<td> </td>
+						<td>Y</td>
+						<td>N</td>
+						<td>2</td>
 						<td> </td>
 						<td> </td>
 					</tr>							
-					<tr style="text-align:center; background-color:#FFFAFA;">
-						<td><input type="checkbox" name="10"></td>
-						<td>97</td>
-						<td>1</td>
-						<td>공통.디바이스1</td>
-						<td>10</td>
-						<td> </td>
-						<td>웹-기타3</td>
-						<td> </td>
-						<td>Y</td>
-						<td>1</td>
-						<td> </td>
-						<td> </td>
-					</tr>					
 				</table>
 			        <div class="blog-pagination">
 			          <ul class="justify-content-center">
